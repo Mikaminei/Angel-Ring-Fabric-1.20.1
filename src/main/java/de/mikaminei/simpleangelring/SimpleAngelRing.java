@@ -1,5 +1,7 @@
 package de.mikaminei.simpleangelring;
 
+import de.mikaminei.simpleangelring.event.PlayerTickHandler;
+import de.mikaminei.simpleangelring.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -10,5 +12,9 @@ public class SimpleAngelRing implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize() {}
+	public void onInitialize() {
+		ModItems.registerModItems();
+
+		PlayerTickHandler.register();
+	}
 }

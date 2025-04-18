@@ -3,7 +3,7 @@
 	"package": "de.mikaminei.simpleangelring.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"LivingEntityFallMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
